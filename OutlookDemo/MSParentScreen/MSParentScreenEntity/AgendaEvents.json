@@ -1,0 +1,31 @@
+{
+    "title": "Outlook team tech talk.",
+    "date": 1519844216,
+    "startTime": 60000,
+    "meetingPeople": [{
+               "firstName": "Ananya",
+               "lastName": "Shivanand",
+               "backgroundColor": "#f9d421ff",
+               "combinedName": "AS"
+               },
+               {
+               "firstName": "Puneetha",
+               "lastName": "KS",
+               "backgroundColor": "#cbf021ff",
+               "combinedName": "PK"
+               },
+               {
+               "firstName": "Snehankur",
+               "lastName": "Adak",
+               "backgroundColor": "#32bce3ff",
+               "combinedName": "SA"
+               },
+               {
+               "firstName": "Subh",
+               "lastName": "B",
+               "backgroundColor": "#329e45ff",
+               "combinedName": "SB"
+               }
+               ],
+    "allDayEvent": false
+}

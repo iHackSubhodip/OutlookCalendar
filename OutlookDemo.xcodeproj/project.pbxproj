@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E075A83207B58D800BB1369 /* MSNetworkLayerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E075A82207B58D800BB1369 /* MSNetworkLayerTestCase.swift */; };
+		3E075A85207B596500BB1369 /* MSDataManagerTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E075A84207B596500BB1369 /* MSDataManagerTestCase.swift */; };
+		3E075A87207B599A00BB1369 /* MSEntityTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E075A86207B599A00BB1369 /* MSEntityTestCase.swift */; };
+		3E075A89207B59CA00BB1369 /* MSCalendarTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E075A88207B59CA00BB1369 /* MSCalendarTestCase.swift */; };
+		3E075A8B207B59FC00BB1369 /* MSDateFormatterTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E075A8A207B59FC00BB1369 /* MSDateFormatterTestCase.swift */; };
+		3E3321682083C64B00C36C14 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 3E3321672083C64B00C36C14 /* README.md */; };
+		3E45488820559CEF00119B6F /* MSEveryDayAgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45488520559CEF00119B6F /* MSEveryDayAgendaTableViewCell.swift */; };
+		3E45488920559CEF00119B6F /* MSAgendaSetionHeaderFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45488620559CEF00119B6F /* MSAgendaSetionHeaderFooter.swift */; };
+		3E45488A20559CEF00119B6F /* MSNoAgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45488720559CEF00119B6F /* MSNoAgendaTableViewCell.swift */; };
+		3E45488C2062A00200119B6F /* MSOutlookWeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45488B2062A00200119B6F /* MSOutlookWeatherManager.swift */; };
+		3E45488E2062A3A400119B6F /* MSOutlookWeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E45488D2062A3A400119B6F /* MSOutlookWeatherModel.swift */; };
+		3EB41DDB20395938002C1B00 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41DDA20395938002C1B00 /* AppDelegate.swift */; };
+		3EB41DE020395938002C1B00 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB41DDE20395938002C1B00 /* Main.storyboard */; };
+		3EB41DE220395938002C1B00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EB41DE120395938002C1B00 /* Assets.xcassets */; };
+		3EB41DE520395938002C1B00 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3EB41DE320395938002C1B00 /* LaunchScreen.storyboard */; };
+		3EB41DF020395939002C1B00 /* OutlookDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41DEF20395939002C1B00 /* OutlookDemoTests.swift */; };
+		3EB41E0E2039BE8B002C1B00 /* MSParentScreenBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E0D2039BE8B002C1B00 /* MSParentScreenBuilder.swift */; };
+		3EB41E102039BEB6002C1B00 /* MSParentScreenContracts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E0F2039BEB6002C1B00 /* MSParentScreenContracts.swift */; };
+		3EB41E122039BECC002C1B00 /* MSUIComponentsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E112039BECC002C1B00 /* MSUIComponentsExtensions.swift */; };
+		3EB41E142039BEDF002C1B00 /* MSAppUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E132039BEDF002C1B00 /* MSAppUtility.swift */; };
+		3EB41E162039BEF6002C1B00 /* MSNetworkingClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E152039BEF6002C1B00 /* MSNetworkingClass.swift */; };
+		3EB41E182039BF23002C1B00 /* MSParentScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E172039BF23002C1B00 /* MSParentScreenViewController.swift */; };
+		3EB41E1A2039BF6D002C1B00 /* MSCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E192039BF6D002C1B00 /* MSCalendarView.swift */; };
+		3EB41E1C2039BF96002C1B00 /* MSAgendaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E1B2039BF96002C1B00 /* MSAgendaView.swift */; };
+		3EB41E1E2039BFCA002C1B00 /* MSCalendarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E1D2039BFCA002C1B00 /* MSCalendarCollectionViewCell.swift */; };
+		3EB41E202039BFEA002C1B00 /* MSAgendaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E1F2039BFEA002C1B00 /* MSAgendaTableViewCell.swift */; };
+		3EB41E222039C028002C1B00 /* MSParentScreenRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E212039C028002C1B00 /* MSParentScreenRouter.swift */; };
+		3EB41E242039C03F002C1B00 /* MSOutlookCalendarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E232039C03F002C1B00 /* MSOutlookCalendarModel.swift */; };
+		3EB41E262039C048002C1B00 /* MSParentScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E252039C048002C1B00 /* MSParentScreenPresenter.swift */; };
+		3EB41E282039C053002C1B00 /* MSParentScreenInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E272039C053002C1B00 /* MSParentScreenInteractor.swift */; };
+		3EB41E2A203E0315002C1B00 /* MSOutlookCalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EB41E29203E0315002C1B00 /* MSOutlookCalendarExtension.swift */; };
+		3ECF544B2041EE0900458AEB /* MSOutlookCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF544A2041EE0900458AEB /* MSOutlookCalendarManager.swift */; };
+		3ECF544D2044509000458AEB /* MSOutlookCalendarManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF544C2044509000458AEB /* MSOutlookCalendarManager+Extension.swift */; };
+		3ECF544F204706B500458AEB /* MSCalendarView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF544E204706B500458AEB /* MSCalendarView+Extension.swift */; };
+		3ECF54512047356E00458AEB /* MSOutlookCalendarManager+AgendaExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF54502047356E00458AEB /* MSOutlookCalendarManager+AgendaExtension.swift */; };
+		3ECF5453204736D600458AEB /* AgendaEvents.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ECF5452204736D600458AEB /* AgendaEvents.json */; };
+		3ECF5455204740B900458AEB /* MSDateFormatterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF5454204740B900458AEB /* MSDateFormatterExtension.swift */; };
+		3ECF54572049C09100458AEB /* MSCalendarFlowlayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF54562049C09100458AEB /* MSCalendarFlowlayout.swift */; };
+		3ECF54592049E3D200458AEB /* MSCalendarCellReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ECF54582049E3D200458AEB /* MSCalendarCellReusableView.swift */; };
+		9025E3D8206D42D1003470CC /* MSOutlookLocationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9025E3D7206D42D1003470CC /* MSOutlookLocationModel.swift */; };
+		90E970422046903A0076F124 /* MSOutlookAgendaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E970412046903A0076F124 /* MSOutlookAgendaModel.swift */; };
+		90F24037206A53B2001FDB48 /* MSAPIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F24036206A53B2001FDB48 /* MSAPIError.swift */; };
+		90F24039206A55E5001FDB48 /* MSWeatherAPIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90F24038206A55E5001FDB48 /* MSWeatherAPIResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3EB41DEC20395939002C1B00 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3EB41DCF20395938002C1B00 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3EB41DD620395938002C1B00;
+			remoteInfo = OutlookDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E075A82207B58D800BB1369 /* MSNetworkLayerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSNetworkLayerTestCase.swift; sourceTree = "<group>"; };
+		3E075A84207B596500BB1369 /* MSDataManagerTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSDataManagerTestCase.swift; sourceTree = "<group>"; };
+		3E075A86207B599A00BB1369 /* MSEntityTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSEntityTestCase.swift; sourceTree = "<group>"; };
+		3E075A88207B59CA00BB1369 /* MSCalendarTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSCalendarTestCase.swift; sourceTree = "<group>"; };
+		3E075A8A207B59FC00BB1369 /* MSDateFormatterTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSDateFormatterTestCase.swift; sourceTree = "<group>"; };
+		3E3321672083C64B00C36C14 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3E45488520559CEF00119B6F /* MSEveryDayAgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSEveryDayAgendaTableViewCell.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenAgendaCell/MSEveryDayAgendaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3E45488620559CEF00119B6F /* MSAgendaSetionHeaderFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSAgendaSetionHeaderFooter.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenAgendaCell/MSAgendaSetionHeaderFooter.swift; sourceTree = SOURCE_ROOT; };
+		3E45488720559CEF00119B6F /* MSNoAgendaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MSNoAgendaTableViewCell.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenAgendaCell/MSNoAgendaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3E45488B2062A00200119B6F /* MSOutlookWeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookWeatherManager.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenManager/MSOutlookWeatherManager.swift; sourceTree = SOURCE_ROOT; };
+		3E45488D2062A3A400119B6F /* MSOutlookWeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookWeatherModel.swift; path = OutlookDemo/MSParentScreen/MSParentScreenEntity/MSOutlookWeatherModel.swift; sourceTree = SOURCE_ROOT; };
+		3EB41DD720395938002C1B00 /* OutlookDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OutlookDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB41DDA20395938002C1B00 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = OutlookDemo/AppDelegate.swift; sourceTree = SOURCE_ROOT; };
+		3EB41DDF20395938002C1B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3EB41DE120395938002C1B00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = OutlookDemo/Assets/Assets.xcassets; sourceTree = SOURCE_ROOT; };
+		3EB41DE420395938002C1B00 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3EB41DE620395938002C1B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = OutlookDemo/Info.plist; sourceTree = SOURCE_ROOT; };
+		3EB41DEB20395939002C1B00 /* OutlookDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutlookDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EB41DEF20395939002C1B00 /* OutlookDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlookDemoTests.swift; sourceTree = "<group>"; };
+		3EB41DF120395939002C1B00 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EB41E0D2039BE8B002C1B00 /* MSParentScreenBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenBuilder.swift; path = OutlookDemo/MSParentScreen/MSParentScreenBuilder/MSParentScreenBuilder.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E0F2039BEB6002C1B00 /* MSParentScreenContracts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenContracts.swift; path = OutlookDemo/MSCalendarContract/MSParentScreenContracts.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E112039BECC002C1B00 /* MSUIComponentsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSUIComponentsExtensions.swift; path = OutlookDemo/MSExtensions/MSUIComponentsExtensions.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E132039BEDF002C1B00 /* MSAppUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSAppUtility.swift; path = OutlookDemo/MSUtility/MSAppUtility.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E152039BEF6002C1B00 /* MSNetworkingClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSNetworkingClass.swift; path = OutlookDemo/MSNetworking/MSNetworkingClass.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E172039BF23002C1B00 /* MSParentScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenViewController.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenView/MSParentScreenViewController.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E192039BF6D002C1B00 /* MSCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSCalendarView.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSCalendarView/MSCalendarView.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E1B2039BF96002C1B00 /* MSAgendaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSAgendaView.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSAgendaView/MSAgendaView.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E1D2039BFCA002C1B00 /* MSCalendarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSCalendarCollectionViewCell.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenCalendarCell/MSCalendarCollectionViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E1F2039BFEA002C1B00 /* MSAgendaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSAgendaTableViewCell.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenAgendaCell/MSAgendaTableViewCell.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E212039C028002C1B00 /* MSParentScreenRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenRouter.swift; path = OutlookDemo/MSParentScreen/MSParentScreenRouter/MSParentScreenRouter.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E232039C03F002C1B00 /* MSOutlookCalendarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookCalendarModel.swift; path = OutlookDemo/MSParentScreen/MSParentScreenEntity/MSOutlookCalendarModel.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E252039C048002C1B00 /* MSParentScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenPresenter.swift; path = OutlookDemo/MSParentScreen/MSParentScreenPresenter/MSParentScreenPresenter.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E272039C053002C1B00 /* MSParentScreenInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSParentScreenInteractor.swift; path = OutlookDemo/MSParentScreen/MSParentScreenInteractor/MSParentScreenInteractor.swift; sourceTree = SOURCE_ROOT; };
+		3EB41E29203E0315002C1B00 /* MSOutlookCalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookCalendarExtension.swift; path = OutlookDemo/MSExtensions/MSOutlookCalendarExtension.swift; sourceTree = SOURCE_ROOT; };
+		3ECF544A2041EE0900458AEB /* MSOutlookCalendarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookCalendarManager.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenManager/MSOutlookCalendarManager.swift; sourceTree = SOURCE_ROOT; };
+		3ECF544C2044509000458AEB /* MSOutlookCalendarManager+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MSOutlookCalendarManager+Extension.swift"; path = "OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenManager/MSOutlookCalendarManager+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		3ECF544E204706B500458AEB /* MSCalendarView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MSCalendarView+Extension.swift"; path = "OutlookDemo/MSParentScreen/MSParentScreenView/MSCalendarView/MSCalendarView+Extension.swift"; sourceTree = SOURCE_ROOT; };
+		3ECF54502047356E00458AEB /* MSOutlookCalendarManager+AgendaExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "MSOutlookCalendarManager+AgendaExtension.swift"; path = "OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenManager/MSOutlookCalendarManager+AgendaExtension.swift"; sourceTree = SOURCE_ROOT; };
+		3ECF5452204736D600458AEB /* AgendaEvents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = AgendaEvents.json; path = OutlookDemo/MSParentScreen/MSParentScreenEntity/AgendaEvents.json; sourceTree = SOURCE_ROOT; };
+		3ECF5454204740B900458AEB /* MSDateFormatterExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSDateFormatterExtension.swift; path = OutlookDemo/MSExtensions/MSDateFormatterExtension.swift; sourceTree = SOURCE_ROOT; };
+		3ECF54562049C09100458AEB /* MSCalendarFlowlayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSCalendarFlowlayout.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSCalendarView/MSCalendarFlowlayout.swift; sourceTree = SOURCE_ROOT; };
+		3ECF54582049E3D200458AEB /* MSCalendarCellReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSCalendarCellReusableView.swift; path = OutlookDemo/MSParentScreen/MSParentScreenView/MSCalendarView/MSCalendarCellReusableView.swift; sourceTree = SOURCE_ROOT; };
+		9025E3D7206D42D1003470CC /* MSOutlookLocationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSOutlookLocationModel.swift; sourceTree = "<group>"; };
+		90E970412046903A0076F124 /* MSOutlookAgendaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSOutlookAgendaModel.swift; path = OutlookDemo/MSParentScreen/MSParentScreenEntity/MSOutlookAgendaModel.swift; sourceTree = SOURCE_ROOT; };
+		90F24036206A53B2001FDB48 /* MSAPIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSAPIError.swift; path = OutlookDemo/MSNetworking/MSAPIError.swift; sourceTree = SOURCE_ROOT; };
+		90F24038206A55E5001FDB48 /* MSWeatherAPIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MSWeatherAPIResult.swift; path = OutlookDemo/MSNetworking/MSWeatherAPIResult.swift; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3EB41DD420395938002C1B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB41DE820395939002C1B00 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EB41DCE20395938002C1B00 = {
+			isa = PBXGroup;
+			children = (
+				3E3321672083C64B00C36C14 /* README.md */,
+				3EB41DD920395938002C1B00 /* OutlookDemo */,
+				3EB41DEE20395939002C1B00 /* OutlookDemoTests */,
+				3EB41DD820395938002C1B00 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3EB41DD820395938002C1B00 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41DD720395938002C1B00 /* OutlookDemo.app */,
+				3EB41DEB20395939002C1B00 /* OutlookDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DD920395938002C1B00 /* OutlookDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41DDA20395938002C1B00 /* AppDelegate.swift */,
+				3EB41DE620395938002C1B00 /* Info.plist */,
+				3EB41DFA2039AD2D002C1B00 /* MSParentScreen */,
+				3EB41E062039BC09002C1B00 /* MSCalendarContract */,
+				3EB41DFD2039B6C5002C1B00 /* MSNetworking */,
+				3EB41DFE2039B702002C1B00 /* MSExtensions */,
+				3EB41DFF2039B715002C1B00 /* MSUtility */,
+				3EB41DFB2039B016002C1B00 /* Storyboards */,
+				3EB41DFC2039B068002C1B00 /* Assets */,
+			);
+			path = OutlookDemo;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DEE20395939002C1B00 /* OutlookDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41DEF20395939002C1B00 /* OutlookDemoTests.swift */,
+				3E075A82207B58D800BB1369 /* MSNetworkLayerTestCase.swift */,
+				3E075A84207B596500BB1369 /* MSDataManagerTestCase.swift */,
+				3E075A86207B599A00BB1369 /* MSEntityTestCase.swift */,
+				3E075A88207B59CA00BB1369 /* MSCalendarTestCase.swift */,
+				3E075A8A207B59FC00BB1369 /* MSDateFormatterTestCase.swift */,
+				3EB41DF120395939002C1B00 /* Info.plist */,
+			);
+			path = OutlookDemoTests;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFA2039AD2D002C1B00 /* MSParentScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E052039BBD1002C1B00 /* MSParentScreenRouter */,
+				3EB41E042039BBB8002C1B00 /* MSParentScreenEntity */,
+				3EB41E032039BB7F002C1B00 /* MSParentScreenPresenter */,
+				3EB41E022039BB70002C1B00 /* MSParentScreenInteractor */,
+				3EB41E012039BB45002C1B00 /* MSParentScreenView */,
+				3EB41E002039BB23002C1B00 /* MSParentScreenBuilder */,
+			);
+			name = MSParentScreen;
+			path = OutlookDemo/MSParentScreen;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFB2039B016002C1B00 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41DE320395938002C1B00 /* LaunchScreen.storyboard */,
+				3EB41DDE20395938002C1B00 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			path = OutlookDemo/Storyboards;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFC2039B068002C1B00 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41DE120395938002C1B00 /* Assets.xcassets */,
+			);
+			name = Assets;
+			path = OutlookDemo/Assets;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFD2039B6C5002C1B00 /* MSNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E152039BEF6002C1B00 /* MSNetworkingClass.swift */,
+				90F24036206A53B2001FDB48 /* MSAPIError.swift */,
+				90F24038206A55E5001FDB48 /* MSWeatherAPIResult.swift */,
+			);
+			name = MSNetworking;
+			path = OutlookDemo/MSNetworking;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFE2039B702002C1B00 /* MSExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E112039BECC002C1B00 /* MSUIComponentsExtensions.swift */,
+				3EB41E29203E0315002C1B00 /* MSOutlookCalendarExtension.swift */,
+				3ECF5454204740B900458AEB /* MSDateFormatterExtension.swift */,
+			);
+			name = MSExtensions;
+			path = OutlookDemo/MSExtensions;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41DFF2039B715002C1B00 /* MSUtility */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E132039BEDF002C1B00 /* MSAppUtility.swift */,
+			);
+			name = MSUtility;
+			path = OutlookDemo/MSUtility;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E002039BB23002C1B00 /* MSParentScreenBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E0D2039BE8B002C1B00 /* MSParentScreenBuilder.swift */,
+			);
+			name = MSParentScreenBuilder;
+			path = OutlookDemo/MSParentScreen/MSParentScreenBuilder;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E012039BB45002C1B00 /* MSParentScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				3ECF54492041EDEB00458AEB /* MSParentScreenManager */,
+				3EB41E072039BCC5002C1B00 /* MSParentScreenView */,
+				3EB41E082039BCE3002C1B00 /* MSCalendarView */,
+				3EB41E092039BCF6002C1B00 /* MSAgendaView */,
+				3EB41E0A2039BD28002C1B00 /* MSParentScreenCell */,
+			);
+			name = MSParentScreenView;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E022039BB70002C1B00 /* MSParentScreenInteractor */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E272039C053002C1B00 /* MSParentScreenInteractor.swift */,
+			);
+			name = MSParentScreenInteractor;
+			path = OutlookDemo/MSParentScreen/MSParentScreenInteractor;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E032039BB7F002C1B00 /* MSParentScreenPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E252039C048002C1B00 /* MSParentScreenPresenter.swift */,
+			);
+			name = MSParentScreenPresenter;
+			path = OutlookDemo/MSParentScreen/MSParentScreenPresenter;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E042039BBB8002C1B00 /* MSParentScreenEntity */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E232039C03F002C1B00 /* MSOutlookCalendarModel.swift */,
+				90E970412046903A0076F124 /* MSOutlookAgendaModel.swift */,
+				3E45488D2062A3A400119B6F /* MSOutlookWeatherModel.swift */,
+				9025E3D7206D42D1003470CC /* MSOutlookLocationModel.swift */,
+				3ECF5452204736D600458AEB /* AgendaEvents.json */,
+			);
+			name = MSParentScreenEntity;
+			path = OutlookDemo/MSParentScreen/MSParentScreenEntity;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E052039BBD1002C1B00 /* MSParentScreenRouter */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E212039C028002C1B00 /* MSParentScreenRouter.swift */,
+			);
+			name = MSParentScreenRouter;
+			path = OutlookDemo/MSParentScreen/MSParentScreenRouter;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E062039BC09002C1B00 /* MSCalendarContract */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E0F2039BEB6002C1B00 /* MSParentScreenContracts.swift */,
+			);
+			name = MSCalendarContract;
+			path = OutlookDemo/MSCalendarContract;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E072039BCC5002C1B00 /* MSParentScreenView */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E172039BF23002C1B00 /* MSParentScreenViewController.swift */,
+			);
+			name = MSParentScreenView;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenView;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E082039BCE3002C1B00 /* MSCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E192039BF6D002C1B00 /* MSCalendarView.swift */,
+				3ECF544E204706B500458AEB /* MSCalendarView+Extension.swift */,
+				3ECF54562049C09100458AEB /* MSCalendarFlowlayout.swift */,
+				3ECF54582049E3D200458AEB /* MSCalendarCellReusableView.swift */,
+			);
+			name = MSCalendarView;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSCalendarView;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E092039BCF6002C1B00 /* MSAgendaView */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E1B2039BF96002C1B00 /* MSAgendaView.swift */,
+			);
+			name = MSAgendaView;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSAgendaView;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E0A2039BD28002C1B00 /* MSParentScreenCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E0C2039BD65002C1B00 /* MSParentScreenAgendaCell */,
+				3EB41E0B2039BD47002C1B00 /* MSParentScreenCalendarCell */,
+			);
+			name = MSParentScreenCell;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E0B2039BD47002C1B00 /* MSParentScreenCalendarCell */ = {
+			isa = PBXGroup;
+			children = (
+				3EB41E1D2039BFCA002C1B00 /* MSCalendarCollectionViewCell.swift */,
+			);
+			name = MSParentScreenCalendarCell;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenCalendarCell;
+			sourceTree = SOURCE_ROOT;
+		};
+		3EB41E0C2039BD65002C1B00 /* MSParentScreenAgendaCell */ = {
+			isa = PBXGroup;
+			children = (
+				3E45488620559CEF00119B6F /* MSAgendaSetionHeaderFooter.swift */,
+				3E45488520559CEF00119B6F /* MSEveryDayAgendaTableViewCell.swift */,
+				3E45488720559CEF00119B6F /* MSNoAgendaTableViewCell.swift */,
+				3EB41E1F2039BFEA002C1B00 /* MSAgendaTableViewCell.swift */,
+			);
+			name = MSParentScreenAgendaCell;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenCell/MSParentScreenAgendaCell;
+			sourceTree = SOURCE_ROOT;
+		};
+		3ECF54492041EDEB00458AEB /* MSParentScreenManager */ = {
+			isa = PBXGroup;
+			children = (
+				3ECF544A2041EE0900458AEB /* MSOutlookCalendarManager.swift */,
+				3ECF544C2044509000458AEB /* MSOutlookCalendarManager+Extension.swift */,
+				3ECF54502047356E00458AEB /* MSOutlookCalendarManager+AgendaExtension.swift */,
+				3E45488B2062A00200119B6F /* MSOutlookWeatherManager.swift */,
+			);
+			name = MSParentScreenManager;
+			path = OutlookDemo/MSParentScreen/MSParentScreenView/MSParentScreenManager;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3EB41DD620395938002C1B00 /* OutlookDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB41DF420395939002C1B00 /* Build configuration list for PBXNativeTarget "OutlookDemo" */;
+			buildPhases = (
+				3EB41DD320395938002C1B00 /* Sources */,
+				3EB41DD420395938002C1B00 /* Frameworks */,
+				3EB41DD520395938002C1B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OutlookDemo;
+			productName = OutlookDemo;
+			productReference = 3EB41DD720395938002C1B00 /* OutlookDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3EB41DEA20395939002C1B00 /* OutlookDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3EB41DF720395939002C1B00 /* Build configuration list for PBXNativeTarget "OutlookDemoTests" */;
+			buildPhases = (
+				3EB41DE720395939002C1B00 /* Sources */,
+				3EB41DE820395939002C1B00 /* Frameworks */,
+				3EB41DE920395939002C1B00 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3EB41DED20395939002C1B00 /* PBXTargetDependency */,
+			);
+			name = OutlookDemoTests;
+			productName = OutlookDemoTests;
+			productReference = 3EB41DEB20395939002C1B00 /* OutlookDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3EB41DCF20395938002C1B00 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Subhodip Banerjee";
+				TargetAttributes = {
+					3EB41DD620395938002C1B00 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Manual;
+					};
+					3EB41DEA20395939002C1B00 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3EB41DD620395938002C1B00;
+					};
+				};
+			};
+			buildConfigurationList = 3EB41DD220395938002C1B00 /* Build configuration list for PBXProject "OutlookDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3EB41DCE20395938002C1B00;
+			productRefGroup = 3EB41DD820395938002C1B00 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3EB41DD620395938002C1B00 /* OutlookDemo */,
+				3EB41DEA20395939002C1B00 /* OutlookDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3EB41DD520395938002C1B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB41DE520395938002C1B00 /* LaunchScreen.storyboard in Resources */,
+				3EB41DE220395938002C1B00 /* Assets.xcassets in Resources */,
+				3E3321682083C64B00C36C14 /* README.md in Resources */,
+				3ECF5453204736D600458AEB /* AgendaEvents.json in Resources */,
+				3EB41DE020395938002C1B00 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB41DE920395939002C1B00 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3EB41DD320395938002C1B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECF54512047356E00458AEB /* MSOutlookCalendarManager+AgendaExtension.swift in Sources */,
+				3E45488820559CEF00119B6F /* MSEveryDayAgendaTableViewCell.swift in Sources */,
+				90F24039206A55E5001FDB48 /* MSWeatherAPIResult.swift in Sources */,
+				3EB41E262039C048002C1B00 /* MSParentScreenPresenter.swift in Sources */,
+				3ECF544D2044509000458AEB /* MSOutlookCalendarManager+Extension.swift in Sources */,
+				3EB41E162039BEF6002C1B00 /* MSNetworkingClass.swift in Sources */,
+				3EB41DDB20395938002C1B00 /* AppDelegate.swift in Sources */,
+				3ECF544B2041EE0900458AEB /* MSOutlookCalendarManager.swift in Sources */,
+				3E45488A20559CEF00119B6F /* MSNoAgendaTableViewCell.swift in Sources */,
+				3EB41E122039BECC002C1B00 /* MSUIComponentsExtensions.swift in Sources */,
+				90F24037206A53B2001FDB48 /* MSAPIError.swift in Sources */,
+				3E45488920559CEF00119B6F /* MSAgendaSetionHeaderFooter.swift in Sources */,
+				3EB41E102039BEB6002C1B00 /* MSParentScreenContracts.swift in Sources */,
+				3EB41E222039C028002C1B00 /* MSParentScreenRouter.swift in Sources */,
+				9025E3D8206D42D1003470CC /* MSOutlookLocationModel.swift in Sources */,
+				3E45488C2062A00200119B6F /* MSOutlookWeatherManager.swift in Sources */,
+				3EB41E282039C053002C1B00 /* MSParentScreenInteractor.swift in Sources */,
+				3ECF5455204740B900458AEB /* MSDateFormatterExtension.swift in Sources */,
+				3EB41E242039C03F002C1B00 /* MSOutlookCalendarModel.swift in Sources */,
+				3ECF544F204706B500458AEB /* MSCalendarView+Extension.swift in Sources */,
+				3EB41E1A2039BF6D002C1B00 /* MSCalendarView.swift in Sources */,
+				3ECF54592049E3D200458AEB /* MSCalendarCellReusableView.swift in Sources */,
+				90E970422046903A0076F124 /* MSOutlookAgendaModel.swift in Sources */,
+				3EB41E202039BFEA002C1B00 /* MSAgendaTableViewCell.swift in Sources */,
+				3EB41E1C2039BF96002C1B00 /* MSAgendaView.swift in Sources */,
+				3EB41E182039BF23002C1B00 /* MSParentScreenViewController.swift in Sources */,
+				3EB41E142039BEDF002C1B00 /* MSAppUtility.swift in Sources */,
+				3E45488E2062A3A400119B6F /* MSOutlookWeatherModel.swift in Sources */,
+				3ECF54572049C09100458AEB /* MSCalendarFlowlayout.swift in Sources */,
+				3EB41E1E2039BFCA002C1B00 /* MSCalendarCollectionViewCell.swift in Sources */,
+				3EB41E2A203E0315002C1B00 /* MSOutlookCalendarExtension.swift in Sources */,
+				3EB41E0E2039BE8B002C1B00 /* MSParentScreenBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3EB41DE720395939002C1B00 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E075A83207B58D800BB1369 /* MSNetworkLayerTestCase.swift in Sources */,
+				3E075A89207B59CA00BB1369 /* MSCalendarTestCase.swift in Sources */,
+				3E075A8B207B59FC00BB1369 /* MSDateFormatterTestCase.swift in Sources */,
+				3E075A85207B596500BB1369 /* MSDataManagerTestCase.swift in Sources */,
+				3E075A87207B599A00BB1369 /* MSEntityTestCase.swift in Sources */,
+				3EB41DF020395939002C1B00 /* OutlookDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3EB41DED20395939002C1B00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3EB41DD620395938002C1B00 /* OutlookDemo */;
+			targetProxy = 3EB41DEC20395939002C1B00 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3EB41DDE20395938002C1B00 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB41DDF20395938002C1B00 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3EB41DE320395938002C1B00 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3EB41DE420395938002C1B00 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3EB41DF220395939002C1B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3EB41DF320395939002C1B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3EB41DF520395939002C1B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = QF3Y3JH9KE;
+				INFOPLIST_FILE = OutlookDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.outlook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "892303ac-2098-4596-8e6c-474d34ccd2f5";
+				PROVISIONING_PROFILE_SPECIFIER = "Homes TC2 Development";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3EB41DF620395939002C1B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = OutlookDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.microsoft.outlook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3EB41DF820395939002C1B00 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OutlookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abc.OutlookDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutlookDemo.app/OutlookDemo";
+			};
+			name = Debug;
+		};
+		3EB41DF920395939002C1B00 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OutlookDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = abc.OutlookDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OutlookDemo.app/OutlookDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3EB41DD220395938002C1B00 /* Build configuration list for PBXProject "OutlookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB41DF220395939002C1B00 /* Debug */,
+				3EB41DF320395939002C1B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB41DF420395939002C1B00 /* Build configuration list for PBXNativeTarget "OutlookDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB41DF520395939002C1B00 /* Debug */,
+				3EB41DF620395939002C1B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3EB41DF720395939002C1B00 /* Build configuration list for PBXNativeTarget "OutlookDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3EB41DF820395939002C1B00 /* Debug */,
+				3EB41DF920395939002C1B00 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3EB41DCF20395938002C1B00 /* Project object */;
+}

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Parent Screen View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="MSParentScreenVC" id="BYZ-38-t0r" customClass="MSParentScreenViewController" customModule="OutlookDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZdG-jk-z9w">
+                                <rect key="frame" x="0.0" y="20" width="375" height="36.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="September(Dummy)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HcZ-JB-dae">
+                                        <rect key="frame" x="109" y="8" width="156" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="HcZ-JB-dae" firstAttribute="centerY" secondItem="ZdG-jk-z9w" secondAttribute="centerY" id="Xt5-Pq-h8l"/>
+                                    <constraint firstItem="HcZ-JB-dae" firstAttribute="centerX" secondItem="ZdG-jk-z9w" secondAttribute="centerX" id="aZK-Ou-hp7"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Gc-bR-3IY">
+                                <rect key="frame" x="0.0" y="57" width="375" height="33"/>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdK-dN-1Nx">
+                                <rect key="frame" x="0.0" y="90" width="375" height="1"/>
+                                <color key="backgroundColor" red="0.83605221114628059" green="0.83605221114628059" blue="0.83605221114628059" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.80000000000000004" id="DtG-S4-gOa"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1r-xY-7HI" customClass="MSCalendarView" customModule="OutlookDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="91" width="375" height="120"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="xsT-oy-n17"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="POj-p6-MXV" customClass="MSAgendaView" customModule="OutlookDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="210.5" width="375" height="420"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2N9-EV-sla">
+                                <rect key="frame" x="0.0" y="630.5" width="375" height="36.5"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Gc-bR-3IY" firstAttribute="height" secondItem="ZdG-jk-z9w" secondAttribute="height" multiplier="0.9" id="0py-Ud-51S"/>
+                            <constraint firstItem="ZdG-jk-z9w" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="1fj-6d-MxV"/>
+                            <constraint firstItem="cdK-dN-1Nx" firstAttribute="top" secondItem="6Gc-bR-3IY" secondAttribute="bottom" id="3up-or-yxz"/>
+                            <constraint firstItem="POj-p6-MXV" firstAttribute="leading" secondItem="Y1r-xY-7HI" secondAttribute="leading" id="7mO-sB-TfX"/>
+                            <constraint firstItem="2N9-EV-sla" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="AEh-PD-R3S"/>
+                            <constraint firstItem="2N9-EV-sla" firstAttribute="height" secondItem="ZdG-jk-z9w" secondAttribute="height" id="ATn-ug-Spz"/>
+                            <constraint firstItem="2N9-EV-sla" firstAttribute="top" secondItem="POj-p6-MXV" secondAttribute="bottom" id="IPA-JI-FnE"/>
+                            <constraint firstItem="ZdG-jk-z9w" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.055" id="IU8-n1-ocp"/>
+                            <constraint firstItem="2N9-EV-sla" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="KPG-1l-Dje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cdK-dN-1Nx" secondAttribute="trailing" id="R6U-kW-EII"/>
+                            <constraint firstItem="ZdG-jk-z9w" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SB0-8d-1hs"/>
+                            <constraint firstItem="POj-p6-MXV" firstAttribute="trailing" secondItem="Y1r-xY-7HI" secondAttribute="trailing" id="U19-lx-FRf"/>
+                            <constraint firstItem="ZdG-jk-z9w" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V5s-3Q-seR"/>
+                            <constraint firstItem="Y1r-xY-7HI" firstAttribute="top" secondItem="cdK-dN-1Nx" secondAttribute="bottom" id="W1Z-Qr-qvm"/>
+                            <constraint firstItem="6Gc-bR-3IY" firstAttribute="top" secondItem="ZdG-jk-z9w" secondAttribute="bottom" id="Yf0-cG-v67"/>
+                            <constraint firstItem="2N9-EV-sla" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="dl7-n6-Gie"/>
+                            <constraint firstItem="POj-p6-MXV" firstAttribute="top" secondItem="Y1r-xY-7HI" secondAttribute="bottom" constant="-0.5" id="iaQ-Bi-D84"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Y1r-xY-7HI" secondAttribute="trailing" id="sB4-bN-vHf"/>
+                            <constraint firstItem="6Gc-bR-3IY" firstAttribute="leading" secondItem="ZdG-jk-z9w" secondAttribute="leading" id="tAF-tL-Zvk"/>
+                            <constraint firstItem="6Gc-bR-3IY" firstAttribute="trailing" secondItem="ZdG-jk-z9w" secondAttribute="trailing" id="tRe-1P-i3b"/>
+                            <constraint firstItem="Y1r-xY-7HI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uPP-nx-caT"/>
+                            <constraint firstItem="cdK-dN-1Nx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zKQ-T9-b1s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="agendaView" destination="POj-p6-MXV" id="HZM-18-QVo"/>
+                        <outlet property="bottomStackView" destination="2N9-EV-sla" id="sj9-OO-bYy"/>
+                        <outlet property="calendarHeight" destination="xsT-oy-n17" id="L8U-6f-nzc"/>
+                        <outlet property="calendarView" destination="Y1r-xY-7HI" id="qUq-7k-H7G"/>
+                        <outlet property="dayStackView" destination="6Gc-bR-3IY" id="zza-K1-10L"/>
+                        <outlet property="topView" destination="ZdG-jk-z9w" id="zIX-Ex-MZF"/>
+                        <outlet property="topViewDescriptionLabel" destination="HcZ-JB-dae" id="V7D-WR-OCR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+</document>
