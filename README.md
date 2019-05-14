@@ -240,9 +240,6 @@ Only Seven days from Current day weather data are shown in the `MSAgendaTableVie
 • Network Layer using URLSession to retrieve weather's data using user's device location.
 
 
-Here above is the brief about the assignment.
-
-
 
 
 ### Best,
